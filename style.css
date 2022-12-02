@@ -29,13 +29,15 @@ body {
 }
 
 .container__colors {
-  text-align: center;
+  box-sizing: border-box;
   padding-top: var(--colorsPaddingTop);
   display: grid;
-  gap: 10px;
-  max-width: 40vw;
-  margin : 30px auto;
-  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  row-gap: 10px;
+  max-width: 700px;
+  margin: auto;
+  grid-template-columns: repeat(3, var(--colorSize));
+  place-items: center;
 }
 
 .color {
