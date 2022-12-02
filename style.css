@@ -1,0 +1,50 @@
+@import url(variables.css);
+
+body {
+  margin: 0;
+  font-family: var(--fontFamily);
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bgColor);
+  color: var(--textColor);
+}
+
+.container {
+  width: var(--containerWidth);
+  margin: auto;
+  padding-top: var(--containerPaddingTop);
+}
+
+.container__title {
+  font-size: var(--titleFontSize);
+  text-align: center;
+}
+
+.container__colorToGuess {
+  text-align: center;
+  font-weight: 200;
+}
+
+.container__colors {
+  text-align: center;
+  padding-top: var(--colorsPaddingTop);
+  display: grid;
+  gap: 10px;
+  max-width: 40vw;
+  margin : 30px auto;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--colorBoxShadow);
+  text-shadow: var(--colorTextShadow);
+  width: var(--colorSize);
+  height: var(--colorSize);
+  border-radius: var(--colorBorderRadius);
+}
